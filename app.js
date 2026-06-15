@@ -15,20 +15,26 @@ app.use(express.static(__dirname + '/public'));
 
 //index/home URL
 app.get('/',(req,res)=>{
-    let title = "Home Page";
+    let title = "Hiking in Cusco: The Ultimate Guide";
     res.render('pages/index',{'title': title});
 });
 
-//about URL
+//about me URL
 app.get('/about',(req,res)=>{
-    let title = "About Page";
+    let title = "About Me";
     res.render('pages/about',{'title': title});
 });
 
-//contact URL
-app.get('/contact',(req,res)=>{
-    let title = "Contact Us";
-    res.render('pages/contact',{'title': title});
+//Best Treks URL
+app.get('/resources',(req,res)=>{
+    let title = "The Best Treks in Cusco";
+    res.render('pages/resources',{'title': title});
+});
+
+// Gallery URL
+app.get('/gallery', (req, res) => {
+    let title = "Glacier & Mountain Architecture Gallery";
+    res.render('pages/gallery', { 'title': title });
 });
 
 //Set server to listen for requests
