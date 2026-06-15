@@ -2,6 +2,10 @@
 
 <div class="container my-4">
     <h2 class="mb-4">User Directory</h2>
+    <div class="alert alert-info border-0 shadow-sm mb-4">
+        <p class="mb-0">This project uses Node.js, Express.js, and EJS templates to create a website that handles a lot of information without requiring a separate HTML file for every person. Our goal was to create a list of 100 users from a JSON file and display their information dynamically whenever a visitor clicks on them. To do this, the server uses two main routes: first, a List Route (/users) that takes the whole list of profiles and second, a Dynamic View Route (/users/view/:id) that looks at the exact ID number in the URL link, pulls just that one person's data out of the list, and pops it into a single, shared profile card. </p>
+    </div>
+
     <table class="table table-hover table-striped">
         <thead class="thead-dark">
             <tr>
